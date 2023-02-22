@@ -23,6 +23,9 @@ const ItemDetailContainer = () => {
         <CardBody>
           <p>Categoria: {item.category.name}</p>  
           <p>Descripcion: {item.description}</p>
+          <p>Precio: {item.price}</p>
+          <img src={item.image} alt="" />
+
         </CardBody> 
       </Card>
     </div>

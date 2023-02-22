@@ -5,10 +5,19 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 const NavBar = () => {
   return (
     <div>
-      <h3 align="center">Savia Jabonera</h3>
+      <div  align="center">
+        <Link to={`/`}>
+          <Button>Savia Jabonera</Button>
+        </Link>
+      </div>
+      
       <Tabs isFitted variant='enclosed' size='md' align='center'>
   <TabList mb='1em'>
-    <Tab>Catalogo</Tab>
+    <Tab>
+      <Link to={`/`}>
+       Catalogo
+      </Link>
+    </Tab>
     <Tab>Nuestros Productos</Tab>
     <Tab>¿Cómo comprar?</Tab>
     <Tab>Preguntas Frecuentes</Tab>
