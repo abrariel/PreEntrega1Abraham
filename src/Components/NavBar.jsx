@@ -18,26 +18,26 @@ const NavBar = () => {
   </TabList>
   <TabPanels>
     <TabPanel>
-    <Menu>
-              <MenuButton
-                as={Button}
-                size="lg"
-                variant="outline"
-                colorScheme="blue"
-                rightIcon={<ChevronDownIcon />}
-                m="5"
-              >
-                Categorias
-              </MenuButton>
-              <MenuList className="menu-list">
-                <Link to={`/category/1`}>
-                  <MenuItem>Solidos</MenuItem>
-                </Link>
-                <Link to={`/category/2`}>
-                  <MenuItem>En crema</MenuItem>
-                </Link>
-              </MenuList>
-            </Menu>
+      <Menu>
+        <MenuButton
+          as={Button}
+          size="lg"
+          variant="outline"
+          colorScheme="blue"
+          rightIcon={<ChevronDownIcon />}
+          m="5"
+        >
+          Categorias
+        </MenuButton>
+        <MenuList className="menu-list">
+          <Link to={`/category/1`}>
+            <MenuItem>Solidos</MenuItem>
+          </Link>
+          <Link to={`/category/2`}>
+            <MenuItem>En crema</MenuItem>
+          </Link>
+        </MenuList>
+      </Menu>
     </TabPanel>
   </TabPanels>
   

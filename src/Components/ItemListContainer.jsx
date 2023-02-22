@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Card, CardHeader, CardBody, CardFooter , Stack , Heading , Divider , ButtonGroup , Button} from '@chakra-ui/react'
 import { getItems } from "../ProductsService"
 
@@ -34,6 +34,11 @@ const Item = ({item}) => (
   <Card>
     <CardHeader>{item.name}</CardHeader>
     <CardBody>Categoria: {item.category.name}</CardBody> 
+    <CardFooter>
+      <Link to={`/item/${item.id}`}>
+        <Button>Ver detalles</Button>
+      </Link>
+    </CardFooter>
   </Card>
 )
 

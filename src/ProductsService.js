@@ -13,3 +13,8 @@ export const getItems = categoryId => new Promise (resolve => {
     resolve(categoryId ? items.filter(item => categoryId === item.category.id) : items)
 
 })
+
+export const getItem = itemId => new Promise (resolve => {
+    console.log("itemId", itemId)
+    resolve(items.find(item => item.id === itemId))
+})
